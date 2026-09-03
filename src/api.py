@@ -20,7 +20,7 @@ app = FastAPI(title="Real-Time Monitoring API")
 # Without CORS, browsers block requests from a different origin/port by default.
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=["http://localhost:3000", "http://localhost:3001"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
